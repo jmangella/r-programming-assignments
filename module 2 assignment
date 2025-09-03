@@ -7,3 +7,5 @@ myMean <- function(x) {
 }
 
 myMean(assignment2)
+
+bloggerlink: https://rprogrammingjenee.blogspot.com/2025/09/module-2-assignment.html
