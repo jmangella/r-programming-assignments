@@ -1,1 +1,38 @@
 
+#module 5 assignment
+#jenee marshall, september 27th, 2025
+
+#creating the matrices
+A <- matrix(1:100,  nrow = 10)
+B <- matrix(1:1000, nrow = 10)
+
+#inspecting the dimensions
+dim(A) 
+dim(B) 
+
+#computing the inverse and the determinant
+invA <- tryCatch(solve(A), error = function(e) e)
+
+# ceterminant of A
+detA <- det(A)
+
+# print results for A
+print("Inverse of A:")
+print(invA)
+
+print("Determinant of A:")
+print(detA)
+
+#computing the inverse and determinant for b
+invB <- tryCatch(solve(B), error = function(e) e)
+detB <- tryCatch(det(B),   error = function(e) e)
+
+# Print results for B
+print("Inverse of B:")
+print(invB)
+
+print("Determinant of B:")
+print(detB)
+
+
+
