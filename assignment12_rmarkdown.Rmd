@@ -1,0 +1,57 @@
+---
+title: "R Markdown Primer"
+author: "Jenee Marshall"
+date: "2025-11-17"
+output: html_document
+---
+
+
+
+## Introduction
+R Markdown lets me write normal text while also running R code in the same document.  
+When I knit it, everything updates automatically, which feels really useful for data science classes.
+
+
+So far, R Markdown feels different from writing a regular report because the code and the explanation stay together.  
+It makes it easier to see why I did something, not just the final answer.  
+I like that the format keeps everything organized, especially because I’m building data skills and need my work to be reproducible for school and future projects.
+
+
+## Math Example - LaTex
+I can also add simple math using LaTeX.  
+This helps when I need to show formulas or write out steps clearly.
+
+Inline example: $\\alpha + \\beta = \\gamma$
+
+Displayed equation:
+
+$$
+y = mx + b
+$$
+
+This is just a basic slope line equation, but it shows that R Markdown can handle math cleanly.
+
+# R Code Chunk 1: Loading a Library and Dataset
+
+Here is my first code chunk. I’m loading **ggplot2** and looking at the built-in `mtcars` dataset.
+
+```{r setup, message=FALSE}
+library(ggplot2)
+head(mtcars)
+
+summary(mtcars$mpg)
+
+ggplot(mtcars, aes(x = hp, y = mpg)) +
+  geom_point() +
+  labs(
+    title = "Miles Per Gallon vs Horsepower",
+    x = "Horsepower",
+    y = "Miles Per Gallon"
+  )
+
+```
+
+##
+Using R Markdown makes my work feel more organized and easier to follow. Everything can be a bit more organized and structured. I like that the writing and the analysis stay connected, because it helps me understand what I’m doing instead of treating the code like a separate step. This is great for any future asignment or even any projects i would have to do.
+
+
